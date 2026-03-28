@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros | Nómada Languages</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo-link">
+                <img src="IMAGENES/LogoNomadaLenguages.png" alt="Nómada Languages Logo" class="logo-img">
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="cursos.html">Cursos</a>
+                <a href="nosotros.html">Nosotros</a>
+            </nav>
+            <a href="modulo.html" class="btn-primary">Test de Nivel</a>
+
+            <span class="material-symbols-outlined menu-toggle" id="mobileMenuBtn">menu</span>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container text-center">
+                <h1>Nuestra Historia</h1>
+                <p>Creemos que el idioma no debe ser una barrera, sino un puente hacia nuevas aventuras.</p>
+            </div>
+        </section>
+
+        <section class="about-section container">
+            <div class="about-content">
+                <span class="subtitle">QUIÉNES SOMOS</span>
+                <h2>De viajeros para viajeros.</h2>
+                <p>Nómada Languages nació de la frustración de aprender gramática durante años y no poder pedir un café al viajar. Decidimos cambiar las reglas del juego.</p>
+                <p>Nuestro equipo está compuesto por nómadas digitales, educadores apasionados y ciudadanos del mundo. Enseñamos el idioma que realmente se habla en las calles, en las oficinas remotas y en los aeropuertos.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">+5k</span>
+                        <span class="stat-label">Estudiantes activos</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">120</span>
+                        <span class="stat-label">Países alcanzados</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container contact-grid">
+                
+                <div class="contact-info">
+                    <h2>Hablemos.</h2>
+                    <p>¿Tienes dudas sobre tu nivel o nuestros programas? Escríbenos, nuestro equipo te responderá en menos de 24 horas.</p>
+                    
+                    <ul class="contact-details">
+                        <li>
+                            <span class="material-symbols-outlined icon">location_on</span>
+                            <div>
+                                <strong>Sede Central (HQ)</strong>
+                                <p>Pereira, Risaralda, Colombia (¡Operamos globalmente!)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined icon">mail</span>
+                            <div>
+                                <strong>Email</strong>
+                                <p>hola@nomadalanguages.com</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined icon">chat</span>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <p>+57 300 123 4567</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contact-form-container">
+                    <form action="#" class="contact-form">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ej. Alex Pino" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensaje">¿En qué podemos ayudarte?</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary w-100">Enviar mensaje</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+
+    </body>
+</html>

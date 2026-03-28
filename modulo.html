@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Nivel | Nómada Languages</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+<body class="bg-surface">
+
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo-link">
+                <img src="IMAGENES/LogoNomadaLenguages.png" alt="Nómada Languages Logo" class="logo-img">
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="cursos.html">Cursos</a>
+                <a href="nosotros.html">Nosotros</a>
+            </nav>
+            <a href="modulo.html" class="btn-primary">Test de Nivel</a>
+
+            <span class="material-symbols-outlined menu-toggle" id="mobileMenuBtn">menu</span>
+        </div>
+    </header>
+
+    <main class="module-page">
+        
+        <section class="module-header text-center container">
+            <span class="subtitle">EVALUACIÓN GRATUITA</span>
+            <h1>Descubre tu nivel exacto</h1>
+            <p>Responde estas breves preguntas para conocer tu dominio del idioma y recibir una recomendación personalizada.</p>
+        </section>
+
+        <section class="quiz-container container">
+            <div class="quiz-card" id="quizCard">
+                
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar" style="width: 20%;"></div>
+                </div>
+                <div class="progress-text" id="progressText">Pregunta 1 de 5</div>
+
+                <div class="question-area">
+                    <h2 id="questionText">1. Choose the correct option: "I _____ to the cinema yesterday."</h2>
+                </div>
+
+                <div class="options-area" id="optionsArea">
+                    <label class="option-label">
+                        <input type="radio" name="answer" value="go">
+                        <span class="option-text">A) go</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="answer" value="went">
+                        <span class="option-text">B) went</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="answer" value="gone">
+                        <span class="option-text">C) gone</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="answer" value="going">
+                        <span class="option-text">D) going</span>
+                    </label>
+                </div>
+
+                <div class="quiz-footer">
+                    <button id="nextBtn" class="btn-primary w-100">Siguiente Pregunta</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="documentation-section container">
+            <div class="doc-card">
+                <h2>Explicación Funcional del Módulo</h2>
+                <hr>
+                
+                <div class="doc-grid">
+                    <div class="doc-item">
+                        <span class="material-symbols-outlined icon">help_center</span>
+                        <h3>¿Qué problema soluciona?</h3>
+                        <p>Muchos estudiantes abandonan los cursos de idiomas porque se inscriben en niveles equivocados (muy fáciles o muy difíciles). Este módulo elimina la fricción inicial, diagnosticando el nivel del usuario de forma autónoma antes de la compra.</p>
+                    </div>
+                    
+                    <div class="doc-item">
+                        <span class="material-symbols-outlined icon">person_play</span>
+                        <h3>¿Cómo interactúa el usuario?</h3>
+                        <p>El usuario se enfrenta a un entorno gamificado. Selecciona la respuesta que considera correcta mediante botones interactivos (Radio Buttons personalizados) y avanza por 5 preguntas. El DOM se actualiza dinámicamente sin recargar la página, ofreciendo una experiencia fluida.</p>
+                    </div>
+                    
+                    <div class="doc-item">
+                        <span class="material-symbols-outlined icon">settings_suggest</span>
+                        <h3>¿Cómo funcionaría para el cliente real?</h3>
+                        <p>Al finalizar el test, el sistema calcula el puntaje total usando condicionales lógicos en JavaScript. Dependiendo del resultado (ej. 0-2 puntos = A1, 3-4 = A2, 5 = B1), el módulo le sugiere un plan específico de nuestra página de "Cursos", actuando como un embudo de ventas automatizado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+    </body>
+</html>
+
