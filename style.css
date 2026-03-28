@@ -880,8 +880,12 @@ body {
     }
  
     /* Oculta el botón CTA del header */
-    .nav-content .btn-primary {
-        display: none;
+    nav-content .btn-primary {
+        display: block; /* Ahora sí se verá */
+        margin: 10px 20px;
+        text-align: center;
+        background: var(--primary-color);
+        order: 4; /* Lo manda al final si usas flexbox */
     }
  
     /* Los links se convierten en menú desplegable, ocultos por defecto */
